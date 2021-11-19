@@ -1,0 +1,77 @@
+:root {
+  --body-font: 'Open Sans', sans-serif;
+  --heading-font: 'Poppins', sans-serif;
+  --soft-magenta: hsl(300, 69%, 71%);
+  --violet: hsl(257, 40%, 49%);
+}
+
+body {
+  background-image: url('../images/bg-desktop.svg'), linear-gradient(var(--violet), var(--violet));
+  background-size: 100%;
+  background-position: -150px -50px;
+  color: white;
+  max-height: 100vh;
+  margin: 5em 10em;
+}
+
+header {
+  margin-bottom: 7em;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main img {
+  width: 80%;
+  margin-right: 5em;
+}
+
+.text-content {
+  padding-top: 1em;
+}
+
+.text-content h1 {
+  font-family: var(--heading-font);
+  font-size: 3em;
+}
+
+.text-content p {
+  font-family: var(--body-font);
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+}
+
+.text-content button {
+  border: white 1px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 12px -2px rgba(0,0,0, 0.8);
+  font-size: 1em;
+  padding: 10px 50px;
+  color: var(--violet);
+}
+
+.text-content button:hover {
+  border: var(--soft-magenta) 1px;
+  background: var(--soft-magenta);
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  bottom: 10%;
+  position: absolute;
+  right: 10%;
+}
+
+footer ion-icon {
+  font-size: 1.8em;
+  width: 1.5em;
+}
+
+footer ion-icon:hover {
+  color: var(--soft-magenta);
+}
